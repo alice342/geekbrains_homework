@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Lato';
+}
+
+/* header */
+
+nav{
+  align-items: center;
+  background-color: black;
+  display: flex;
+  height: 75px;
+  justify-content: space-between;
+  padding: 0 231px;
+}
+
+nav div{
+  align-items: flex-end;
+  display: flex;
+  height: 38px;
+}
+
+.nav_logo {
+  display: flex;
+  gap: 41px;
+  align-items: center;
+}
+
+.nav_menu img{
+  margin-right: 33px;
+}
+
+.search{
+  height: 26px;
+  width: 26px;
+  background-color: inherit;
+  border: none;
+  background-image: url(assets/img/search.svg);
+}
+
+/* banner */
+
+.promo{
+  background-color: #F1E4E6;
+  height: 764px;
+}
+
+.promo-container{
+  display: flex;
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.promo_text::before{
+  content: "";
+  display: block;
+  width: 12px;
+  height: 92px;
+  background-color: #F16D7F;
+  position: absolute;
+  left: -16px;
+}
+
+.promo_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding-left: 16px;
+}
+
+.promo_text p span{
+  color: #F16D7F;
+}
+
+.promo_text_top{
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.promo_text_bottom{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.promo img {
+  margin-right: 64px;
+}
+
+/* shop sections */
+
+.shop-sections{
+  display: flex;
+  height: 470px;
+  width: 1140px;
+  margin: 65px auto;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sections_first-row{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.women_section,
+.men_section,
+.kids_section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 260px;
+  width: 360px;
+}
+
+.women_section{
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("assets/img/women_section.png");
+}
+
+.men_section{
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("assets/img/men_section.png");
+}
+
+.kids_section{
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("assets/img/kids_section.png");
+}
+
+.accesories_section{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 180px;
+  width: 1140px;
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("assets/img/accesories_section.png");
+}
+
+.shop-sections a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.shop-sections a h3{
+  color: #F16D7F;
+  font-size: 24px;
+}
+
+/* products */
+
+.products{
+  margin: 96px auto;
+  width: 1140px;
+}
+
+.products h2{
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+
+.products p{
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #9F9F9F;
+  margin-top: 6px;
+  margin-bottom: 48px;
+}
+
+.product-card{
+  width: 360px;
+  background-color: #F8F8F8;
+  height: 582px;
+}
+
+.product-description{
+  padding: 25px 29px 20px 16px;
+}
+
+.product-description p{
+  margin: 0;
+  text-align: left;
+  font-weight: 300;
+  color: #5D5D5D;
+}
+
+.products h3{
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+
+.products .price{
+  font-weight: 400;
+  color: #F16D7F;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.products-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-card a {
+  height: 420px;
+  width: 360px;
+  display: block;
+  position: relative;
+}
+
+.product-card a:hover{
+  background: linear-gradient( rgba(33, 22, 22, 0.7),rgba(33, 22, 22, 0.7));
+}
+
+.product-card a:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url(assets/img/add_to_cart.svg) no-repeat;
+  background-position: center;
+  opacity: 0;
+}
+
+.product-card a:before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(58, 56, 56, 0.86);
+  opacity: 0;
+}
+
+a:hover:before,
+a:hover:after {
+  opacity: 1;
+}
+
+.products .button {
+  border: 1px solid #FF6A6A;
+  height: 48px;
+  width: 212px;
+  color: #F26376;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 48px auto;
+  cursor: pointer;
+}
+
+.products .button:hover{
+  background-color: #F16D7F;
+  color: white;
+}
+
+/* advantages */
+
+.advantages-container{
+  margin: 0 auto;
+  background-color: #222224;
+  width: 1140px;
+  display: flex;
+  flex-direction: row;
+  gap: 88px;
+  justify-content: center;
+}
+
+.advantage {
+  width: 304px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.advantage.first-advantage{
+  background: url(assets/img/car.svg) no-repeat;
+  background-position: top center;
+}
+
+.advantages{
+  height: 341px;
+  background-color: #222224;
+  display: flex;
+  align-items: center;
+}
+
+.advantage p{
+  color: white;
+  font-family: 'Lato';
+  font-size: 20px;
+}
+
+.advantage p:last-child{
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 16px;
+}
+
+.advantage.second-advantage{
+  background: url(assets/img/discount.svg) no-repeat;
+  background-position: top center;
+}
+
+.advantage.third-advantage{
+  background: url(assets/img/crown.svg) no-repeat;
+  background-position: top center;
+}
+
+/* subscription block */
+
+.subscribe-block{
+  margin: 0 auto;
+  background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(assets/img/background.png) no-repeat;
+  height: 448px;
+  background-position: center;
+  width: 1600px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscribe-info p{
+  font-family: 'Lato';
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.subscribe-info p span{
+  font-style: italic;
+}
+
+.subscribe-info{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 344px;
+  text-align: center;
+  padding-left: 232px;
+}
+
+.subscribe p{
+  font-family: 'Lato';
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.subscribe p span{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.subscribe-submit input[type="text"]{
+  border: none;
+  background-color: #E1E1E1;
+  width: 258px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 16px 22px;
+}
+
+.subscribe-submit{
+  display: flex;
+  flex-direction: row;
+}
+
+.subscribe-submit input{
+  font-family: 'Lato';
+  font-size: 14px;
+}
+
+.subscribe-submit input[type="submit"]{
+  border: none;
+  background-color: #F16D7F;
+  height: 50px;
+  width: 101px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 16px 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.subscribe-submit input[type="submit"]:hover{
+  background-color: #E05C6E;
+}
+
+.subscribe{
+  padding-right: 322px;
+}
+
+/* footer */
+
+footer{
+  height: 79px;
+  background-color: #222224;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 235px 0 230px;
+}
+
+footer p{
+  color: white;
+  font-family: 'Lato';
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.social-media a{
+  height: 32px;
+  width: 32px;
+  display: block;
+}
+
+.social-media{
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.social-media .facebook{
+  background: url(assets/img/facebook.svg) no-repeat, white;
+  background-position: center;
+}
+
+.social-media .instagram{
+  background: url(assets/img/instagram.svg) no-repeat, white;
+  background-position: center;
+}
+.social-media .pinterest{
+  background: url(assets/img/pinterest.svg) no-repeat, white;
+  background-position: center;
+}
+.social-media .twitter{
+  background: url(assets/img/twitter.svg) no-repeat, white;
+  background-position: center;
+}
+
+.social-media a:hover{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  background-color: #0E9280;
+}
