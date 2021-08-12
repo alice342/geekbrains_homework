@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="nav_top">
+        <div class="nav_logo">
+          <a href="#"><img src="assets/img/logo.svg" alt=""></a>
+          <button class="search" type="button" name="button"></button>
+        </div>
+        <div class="nav_menu">
+          <div class="menu">
+            <label class="menu-btn" for="menu-switch">
+              <span></span>
+            </label>
+            <input id="menu-switch" type="checkbox">
+            <ul class="menu-list">
+              <li><a href="#" class="menu-list-close-btn"></a></li>
+              <li><span class="menu-list-title">menu</span></li>
+              <li class="menu-list-item">
+                <a href="#">man</a>
+                <ul class="menu-sublist">
+                  <li class="menu-sublist-item">
+                    <a href="#">Accessories</a>
+                  </li>
+                  <li class="menu-sublist-item">
+                    <a href="#">Bags</a>
+                  </li>
+                  <li class="menu-sublist-item">
+                    <a href="#">Denim</a>
+                  </li>
+                  <li class="menu-sublist-item">
+                    <a href="#">T-Shirts</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-list-item">
+                <a href="#">woman</a>
+                <ul class="menu-sublist">
+                  <li class="menu-sublist-item">
+                    <a href="#">Accessories</a>
+                  </li>
+                  <li class="menu-sublist-item">
+                    <a href="#">Jackets &amp;&nbsp;Coats</a>
+                  </li>
+                  <li class="menu-sublist-item">
+                    <a href="#">Polos</a>
+                  </li>
+                  <li class="menu-sublist-item">
+                    <a href="#">T-Shirts</a>
+                  </li>
+                  <li class="menu-sublist-item">
+                    <a href="#">Shirts</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-list-item">
+                <a href="#">kids</a>
+                <ul class="menu-sublist">
+                  <li class="menu-sublist-item">
+                    <a href="#">Accessories</a>
+                  </li>
+                  <li class="menu-sublist-item">
+                    <a href="#">Jackets &amp;&nbsp;Coats</a>
+                  </li>
+                  <li class="menu-sublist-item">
+                    <a href="#">Polos</a>
+                  </li>
+                  <li class="menu-sublist-item">
+                    <a href="#">T-Shirts</a>
+                  </li>
+                  <li class="menu-sublist-item">
+                    <a href="#">Shirts</a>
+                  </li>
+                  <li class="menu-sublist-item">
+                    <a href="#">Bags</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <img src="assets/img/personal.svg" alt="">
+          <img src="assets/img/cart.svg" alt="">
+        </div>
+      </nav>
+      <nav class="nav_bottom">
+        <p>NEW ARRIVALS</p>
+        <div class="breadcrumbs">
+          <a href="#">HOME </a>
+          <span> / </span>
+          <a href="#">MEN</a>
+          <span> / </span>
+          <a href="#">NEW ARRIVALS</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="filters">
+        <label class="filter-btn" for="filter-switch">
+          FILTER<span></span>
+        </label>
+        <input id="filter-switch" type="checkbox" name="filter-btn" value="">
+        <ul class="filter-list">
+          <li>
+            <label class="filter-btn" for="filter-switch">
+            FILTER<span></span>
+            </label>
+        </li>
+          <li>
+            <input id="filter-category-switch" type="checkbox" name="filter-category-switch" value="">
+            <label class="filter-list-title category-title" for="filter-category-switch">
+              CATEGORY<span></span>
+            </label>
+            <ul class="filter-sublist categories">
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Bags</a></li>
+              <li><a href="#">Denim</a></li>
+              <li><a href="#">Hoodies & Sweatshirts</a></li>
+              <li><a href="#">Jackets & Coats</a></li>
+              <li><a href="#">Polos</a></li>
+              <li><a href="#">Shirts</a></li>
+              <li><a href="#">Shoes</a></li>
+              <li><a href="#">Sweaters & Knits</a></li>
+              <li><a href="#">T-Shirts</a></li>
+              <li><a href="#">Tanks</a></li>
+            </ul>
+        </li>
+        <li>
+          <input id="filter-brand-switch" type="checkbox" name="filter-brand-switch" value="">
+          <label class="filter-list-title brand-title" for="filter-brand-switch">
+            BRAND<span></span>
+          </label>
+          <ul>
+
+          </ul>
+        </li>
+        <li>
+          <input id="filter-designer-switch" type="checkbox" name="filter-designer-switch" value="">
+          <label class="filter-list-title designer-title" for="filter-designer-switch">
+            designer<span></span>
+          </label>
+          <ul>
+
+          </ul>
+        </li>
+        </ul>
+        <div class="filters-row">
+          <p>TRENDING NOW <span></span> </p>
+          <div>
+            <label class="filter-size" for="filter-size-switch">
+              SIZE <span></span>
+            </label>
+            <input id="filter-size-switch" type="checkbox" name="filter-size-switch" value="">
+            <ul class="filter-size-list">
+              <li><input type="checkbox" name="size-xs" value="xs">XS</li>
+              <li><input type="checkbox" name="size-s" value="s">S</li>
+              <li><input type="checkbox" name="size-m" value="m">M</li>
+              <li><input type="checkbox" name="size-l" value="l">L</li>
+            </ul>
+          </div>
+
+          <p>PRICE<span></span></p>
+        </div>
+
+      </div>
+      <div class="products-container">
+        <article class="product-card">
+          <a href="#"><img src="assets/img/main_product_1.png" alt=""></a>
+          <div class="product-description">
+            <h3>ELLERY X M'O CAPSULE</h3>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="price">$52.00</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="#"><img src="assets/img/catalog_2.png" alt=""></a>
+          <div class="product-description">
+            <h3>ELLERY X M'O CAPSULE</h3>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="price">$52.00</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="#"><img src="assets/img/catalog_3.png" alt=""></a>
+          <div class="product-description">
+            <h3>ELLERY X M'O CAPSULE</h3>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="price">$52.00</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="#"><img src="assets/img/catalog_4.png" alt=""></a>
+          <div class="product-description">
+            <h3>ELLERY X M'O CAPSULE</h3>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="price">$52.00</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="#"><img src="assets/img/catalog_5.png" alt=""></a>
+          <div class="product-description">
+            <h3>ELLERY X M'O CAPSULE</h3>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="price">$52.00</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="#"><img src="assets/img/catalog_6.png" alt=""></a>
+          <div class="product-description">
+            <h3>ELLERY X M'O CAPSULE</h3>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="price">$52.00</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="#"><img src="assets/img/catalog_7.png" alt=""></a>
+          <div class="product-description">
+            <h3>ELLERY X M'O CAPSULE</h3>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="price">$52.00</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="#"><img src="assets/img/catalog_8.png" alt=""></a>
+          <div class="product-description">
+            <h3>ELLERY X M'O CAPSULE</h3>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="price">$52.00</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a href="#"><img src="assets/img/catalog_9.png" alt=""></a>
+          <div class="product-description">
+            <h3>ELLERY X M'O CAPSULE</h3>
+            <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+            <p class="price">$52.00</p>
+          </div>
+        </article>
+        <div class="pagination">
+           <button class="page-left" type="button" name="page-button-left"></button>
+           <a class="active-page" href="#">1</a>
+           <a href="#">2</a>
+           <a href="#">3</a>
+           <a href="#">4</a>
+           <a href="#">5</a>
+           <div>
+             <a href="#">6</a>
+             <p>.....</p>
+             <a href="#">20</a>
+           </div>
+           <button class="page-right" type="button" name="page-button-right"></button>
+        </div>
+      </div>
+
+    </main>
+    <section class="advantages">
+      <div class="advantages-container">
+        <div class="advantage first-advantage">
+          <p>Free Delivery</p>
+          <p>Worldwide delivery on all. Authorit tively morph<br>next-generation innov tion with extensive models.</p>
+        </div>
+        <div class="advantage second-advantage">
+          <p>Sales & discounts</p>
+          <p>Worldwide delivery on all. Authorit tively morph<br>next-generation innov tion with extensive models.</p>
+        </div>
+        <div class="advantage third-advantage">
+          <p>Quality assurance</p>
+          <p>Worldwide delivery on all. Authorit tively morph<br>next-generation innov tion with extensive models.</p>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe-block">
+      <div class="subscribe-info">
+        <img src="assets/img/face.png" alt="">
+        <p>“Vestibulum quis porttitor dui! Quisque <br>viverra nunc mi, <span>a pulvinar purus <br>condimentum“</span></p>
+      </div>
+      <div class="subscribe">
+        <p>SUBSCRIBE<br><span>FOR OUR NEWLETTER AND PROMOTION</span></p>
+        <form class="subscribe-submit">
+          <input type="text" name="email" value="" placeholder="Enter Your Email">
+          <input type="submit" name="subscribe-submit" value="Subscribe">
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>© 2021  Brand  All Rights Reserved.</p>
+      <div class="social-media">
+        <a class="facebook" href="#"></a>
+        <a class="instagram" href="#"></a>
+        <a class="pinterest" href="#"></a>
+        <a class="twitter" href="#"></a>
+      </div>
+    </footer>
+  </body>
+</html>
