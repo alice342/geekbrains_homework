@@ -424,6 +424,11 @@ nav, .nav_top{
   font-weight: 300;
 }
 
+.breadcrumbs a[href]::after{
+  content: "/";
+  margin-left: 1px;
+}
+
 .breadcrumbs a:last-child{
   font-weight: 700;
   color: #F16D7F;
@@ -431,6 +436,11 @@ nav, .nav_top{
 
 .breadcrumbs > *{
   margin: 0 1px;
+}
+
+.video-file {
+  width: 100%;
+  object-fit: cover;
 }
 
 .nav_logo {
@@ -460,7 +470,7 @@ nav, .nav_top{
 
 .promo-container{
   display: flex;
-  width: 1600px;
+  width: 100%;
   margin: 0 auto;
 }
 
