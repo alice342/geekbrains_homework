@@ -1111,6 +1111,7 @@ footer p{
   height: 306px;
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
   display: flex;
+  margin-right: 50px;
 }
 
 .cart_product-card img{
@@ -1124,6 +1125,7 @@ footer p{
   width: 360px;
   gap: 20px;
   font-weight: 300;
+  margin-top: 20px;
 }
 
 .shipping-info input[type="text"]{
@@ -1229,7 +1231,22 @@ footer p{
 }
 
 .cart-wrapper{
+  max-width: 1140px;
   display: flex;
   justify-content: space-between;
-  margin: 96px 230px;
+  margin: 96px auto 128px;
+  flex-wrap: wrap;
+}
+
+.cart_shopping_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+
+.cart_shopping_buttons a{
+  padding: 16px 40px;
+  border: 1px solid #A4A4A4;
+  font-weight: 300;
+  font-size: 14px;
 }
