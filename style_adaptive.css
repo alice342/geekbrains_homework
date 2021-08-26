@@ -1,0 +1,149 @@
+@media (max-width: 1140px){
+  .nav_logo,
+  footer p{
+    padding-left: 32px;
+  }
+  .social-media,
+  .nav_menu{
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+
+/* banner */
+
+  .promo{
+    height: 368px;
+  }
+  .promo img{
+    height: 368px;
+    margin-left: 106px;
+  }
+  .promo-container{
+  }
+  .promo_text_top {
+    font-size: 44px;
+  }
+  .promo_text_bottom {
+    font-size: 24px;
+  }
+
+  /* shop section */
+
+  .women_section,
+  .men_section,
+  .kids_section{
+    height: 167px;
+    width: 232px;
+  }
+  .shop-sections{
+    gap: 19px;
+    margin-bottom: 154px;
+  }
+  .accesories_section{
+    height: 116px;
+    width: 737px;
+  }
+
+  /* products */
+
+  .products-container{
+    gap: 16px;
+  }
+
+  /* advantages block */
+
+  .advantages-container{
+    flex-direction: column;
+    gap: 48px;
+  }
+  .advantages{
+    padding: 48px 0;
+  }
+
+  /* subscribe block */
+
+  .subscribe-wrapper{
+    flex-direction: column;
+    height: 614px;
+  }
+  .subscribe-info{
+    margin-top: 64px;
+  }
+  .subscribe{
+    margin-bottom: 140px;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+/* banner */
+
+  .promo{
+    height: 368px;
+  }
+  .menu a{
+    display: none;
+  }
+  .promo img{
+    height: 368px;
+    margin-left: 106px;
+  }
+  .promo-container{
+  }
+  .promo_text_top {
+    font-size: 44px;
+  }
+  .promo_text_bottom {
+    font-size: 24px;
+  }
+
+  /* shop section */
+
+  .women_section,
+  .men_section,
+  .kids_section{
+    height: 167px;
+    width: 232px;
+  }
+  .shop-sections{
+    gap: 19px;
+    margin-bottom: 154px;
+  }
+  .accesories_section{
+    height: 116px;
+    width: 737px;
+  }
+
+  /* products */
+
+  .products-container{
+    gap: 16px;
+  }
+
+  /* advantages block */
+
+  .advantages-container{
+    flex-direction: column;
+    gap: 48px;
+  }
+  .advantages{
+    padding: 48px 0;
+  }
+
+  /* subscribe block */
+
+  .subscribe-wrapper{
+    flex-direction: column;
+    height: 614px;
+  }
+  .subscribe-info{
+    margin-top: 64px;
+  }
+  .subscribe{
+    margin-bottom: 140px;
+  }
+
+}
