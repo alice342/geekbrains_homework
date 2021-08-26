@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Корзина</title>
+    <title>Регистрация</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -99,59 +99,42 @@
           </div>
         </div>
       </nav>
-      <nav class="nav_bottom">
+      <div class="nav_bottom">
         <div class="nav_wrapper">
-          <p>Shopping Cart</p>
+          <p>registration</p>
         </div>
 
-
-      </nav>
+      </div>
     </header>
     <main>
-      <div class="cart-wrapper">
-        <section class="cart_products">
-          <div class="cart_product-card">
-            <img src="assets/img/catalog_3.png" alt="">
-            <div class="cart_product-description">
-              <p>MANGO  PEOPLE  <br>T-SHIRT</p>
-              <p>Price: <span>$300</span></p>
-              <p>Color: <span>Red</span></p>
-              <p>Size: <span>XL</span></p>
-              <p>Quantity: <input type="text" name="" value="2"> </p>
-            </div>
-            <button class="delete-button" type="button" name="button"></button>
+      <section class="registration-wrapper">
+        <form class="registration-form" action="" method="post">
+          <p>Your Name</p>
+          <input type="text" name="" value="" placeholder="First Name">
+          <input type="text" name="" value="" placeholder="Last Name">
+          <div class="gender_radios">
+            <input type="radio" name="gender" value="" id="male_radio"> <label for="male_radio">Male</label>
+            <input type="radio" name="gender" value="" id="female_radio"> <label for="female_radio">Female</label>
           </div>
-          <div class="cart_product-card">
-            <img src="assets/img/catalog_2.png" alt="">
-            <div class="cart_product-description">
-              <p>MANGO  PEOPLE  <br>T-SHIRT</p>
-              <p>Price: <span>$300</span></p>
-              <p>Color: <span>Red</span></p>
-              <p>Size: <span>XL</span></p>
-              <p>Quantity: <input type="text" name="" value="2"> </p>
-            </div>
-            <button class="delete-button" type="button" name="button"></button>
-          </div>
-          <div class="cart_shopping_buttons">
-            <a href="#">CLEAR SHOPPING CART</a>
-            <a href="#">CONTINUE SHOPPING</a>
-          </div>
-        </section>
-        <form class="shipping-info" action="" method="post">
-          <p>SHIPPING ADRESS</p>
-          <input type="text" name="" value="" placeholder="Bangladesh">
-          <input type="text" name="" value="" placeholder="State">
-          <input type="text" name="" value="" placeholder="Postcode / Zip">
-          <input type="submit" name="" value="GET A QUOTE">
-          <div class="cart_price-block">
-            <div class="prices-wrapper">
-              <p class="cart_price-sub-total">sub total <span>$900</span></p>
-              <p class="cart_price-grand-total">grand total <span>$900</span></p>
-            </div>
-            <button type="button" name="button">PROCEED TO CHECKOUT</button>
-          </div>
+
+          <p>Login details</p>
+          <input type="text" name="" value="" placeholder="Email">
+          <input type="text" name="" value="" placeholder="Password">
+          <span>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</span>
+          <input type="submit" name="" value="JOIN NOW">
         </form>
-      </div>
+        <div class="perks-block">
+          <h2>LOYALTY HAS ITS PERKS</h2>
+          <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+          <ul>
+            <li>15% off welcome offer</li>
+            <li>Free shipping, returns and exchanges on all orders</li>
+            <li>$10 off a purchase on your birthday</li>
+            <li>Early access to products</li>
+            <li>Exclusive offers & rewards</li>
+          </ul>
+        </div>
+      </section>
     </main>
     <section class="subscribe-block">
       <div class="subscribe-info">
