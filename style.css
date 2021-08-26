@@ -1086,6 +1086,8 @@ footer p{
   justify-content: center;
   align-items: center;
   margin-top: 49px;
+  font-size: 16px;
+  color: #F26376;
 }
 
 .product-info .add-to-cart:hover{
@@ -1096,16 +1098,8 @@ footer p{
   fill: white;
 }
 
-.product-info .add-to-cart:hover p{
+.product-info .add-to-cart:hover{
   color: white;
-}
-
-.product-info .add-to-cart p{
-  font-family: Lato;
-  font-weight: normal;
-  font-size: 16px;
-  color: #F26376;
-  display: flex;
 }
 
 .product-info .add-to-cart svg{
