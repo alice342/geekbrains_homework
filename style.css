@@ -485,8 +485,9 @@ nav, .nav_top{
 
 .promo-container{
   display: flex;
-  width: 100%;
+  max-width: 1140px;
   margin: 0 auto;
+  gap: 250px
 }
 
 .promo_text::before{
@@ -800,16 +801,20 @@ nav, .nav_top{
 /* subscription block */
 
 .subscribe-block{
-  margin: 0 auto;
   background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(assets/img/background.png) no-repeat;
-  height: 448px;
   background-size: 100%100%;
   background-position: center;
   width: 100%;
+}
+
+.subscribe-wrapper{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1140px;
+  height: 448px;
 }
 
 .subscribe-info p{
@@ -828,7 +833,6 @@ nav, .nav_top{
   flex-direction: column;
   width: 344px;
   text-align: center;
-  padding-left: 232px;
 }
 
 .subscribe p{
@@ -879,9 +883,6 @@ nav, .nav_top{
   background-color: #E05C6E;
 }
 
-.subscribe{
-  padding-right: 322px;
-}
 
 /* footer */
 
@@ -1177,6 +1178,10 @@ footer p{
   cursor: pointer;
 }
 
+.shipping-info input[type="submit"]:hover{
+  background-color: #F2F2F2;
+}
+
 .cart_price-block{
   background-color: #F5F3F3;
   text-transform: uppercase;
@@ -1223,6 +1228,15 @@ footer p{
   font-weight: 300;
   font-size: 16px;
   margin-bottom: 43px;
+}
+
+.cart_price-block button:hover{
+  background-color: #E05C6E;
+}
+
+.registration-form input[type="submit"]:hover{
+  background: url(assets/img/long-arrow.svg) no-repeat, #E05C6E;
+  background-position: right 29px center;
 }
 
 .cart_product-description {
@@ -1280,7 +1294,10 @@ footer p{
   text-align: center;
 }
 
-.cart_product-card
+.cart_shopping_buttons a:hover{
+  background-color: #F2F2F2;
+}
+
 
 /* registration */
 
