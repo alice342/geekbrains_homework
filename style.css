@@ -480,14 +480,15 @@ nav, .nav_top{
 
 .promo{
   background-color: #F1E4E6;
-  height: 764px;
+  max-height: 764px;
+  min-height: 368px;
 }
 
 .promo-container{
   display: flex;
   max-width: 1140px;
   margin: 0 auto;
-  gap: 250px
+  justify-content: space-between;
 }
 
 .promo_text::before{
@@ -506,6 +507,7 @@ nav, .nav_top{
   justify-content: center;
   position: relative;
   padding-left: 16px;
+  padding-right: 5%;
 }
 
 .promo_text p span{
@@ -524,30 +526,19 @@ nav, .nav_top{
 
 .promo img {
   margin-right: 64px;
+  height: 100%;
 }
 
 /* shop sections */
 
 .shop-sections{
   display: flex;
-  height: 470px;
-  width: 1140px;
+  max-width: 1140px;
   margin: 65px auto;
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.women_section,
-.men_section,
-.kids_section,
-.accesories_section {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 260px;
-  width: 360px;
+  box-sizing: border-box;
 }
 
 .women_section{
@@ -562,9 +553,22 @@ nav, .nav_top{
   background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("assets/img/kids_section.png");
 }
 
+.women_section,
+.men_section,
+.kids_section,
+.accesories_section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 260px;
+  width: 360px;
+  background-size: contain;
+}
+
 .accesories_section{
   height: 180px;
-  width: 1140px;
+  width: 100%;
   background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url("assets/img/accesories_section.png");
 }
 
@@ -643,6 +647,7 @@ nav, .nav_top{
   gap: 30px;
   max-width: 1140px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .product-card a {
@@ -750,7 +755,7 @@ nav, .nav_top{
 .advantages-container{
   margin: 0 auto;
   background-color: #222224;
-  width: 1140px;
+  max-width: 1140px;
   display: flex;
   flex-direction: row;
   gap: 88px;
@@ -802,7 +807,7 @@ nav, .nav_top{
 
 .subscribe-block{
   background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(assets/img/background.png) no-repeat;
-  background-size: 100%100%;
+  background-size: cover;
   background-position: center;
   width: 100%;
 }
