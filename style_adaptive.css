@@ -9,7 +9,16 @@
   .subscribe{
     padding-right: 32px;
   }
+  .accesories_section{
+    max-width: 750px;
+  }
 
+}
+
+@media (max-width: 733px){
+  .accesories_section{
+    width: 484px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -44,7 +53,7 @@
   }
   .accesories_section{
     height: 116px;
-    width: 737px;
+    max-width: 737px;
   }
 
   /* products */
