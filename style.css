@@ -183,7 +183,7 @@ input[type="checkbox"]{
 
 .filters{
   margin: 51px auto 64px;
-  width: 1140px;
+  max-width: 1140px;
   display: flex;
   flex-direction: row;
   gap: 304px;
