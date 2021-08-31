@@ -21,6 +21,7 @@
   .filters{
     max-width: 750px;
     justify-content: space-between;
+    gap: 0;
   }
   .filter-btn{
     padding: 0;
@@ -38,7 +39,7 @@
   }
   .filter-btn,
   .filters-row{
-    padding: 16px;
+    padding: 0 16px;
   }
 }
 
@@ -124,9 +125,6 @@
   .menu a{
     display: inherit;
   }
-  .promo img{
-    display: none;
-  }
   .promo_text{
     padding-right: 0;
   }
@@ -145,10 +143,19 @@
   }
   .filters-row{
     font-size: 12px;
+    gap: 24px;
+  }
+  .filter-btn{
+    display: none;
+  }
+  .filter-btn.mobile,
+  .filter-btn.mobile span{
+    display: flex;
   }
   .nav_bottom{
     padding: 24px 0 46px;
   }
+
 /* banner */
 
   .promo{
