@@ -120,6 +120,12 @@ a{
   height: 2px;
   background-color: #000;
   position: relative;
+  border-radius: 1px;
+}
+.filter-btn.mobile span{
+  width: 25px;
+  height: 4px;
+  display: none;
 }
 
 .filter-btn span::before,
@@ -134,9 +140,19 @@ a{
   left: 0;
 }
 
+.filter-btn.mobile span::before{
+  top: -10px;
+  height: 4px;
+}
+
 .filter-btn span::after{
   width: 60%;
   top: 4px;
+}
+
+.filter-btn.mobile span::after{
+  top: 10px;
+  height: 4px;
 }
 
 .menu-btn span {
@@ -183,7 +199,7 @@ input[type="checkbox"]{
 
 .filters{
   margin: 51px auto 64px;
-  width: 1140px;
+  max-width: 1140px;
   display: flex;
   flex-direction: row;
   gap: 304px;
@@ -687,7 +703,7 @@ nav, .nav_top{
 .products-item:hover .products-item-photo {
   filter: brightness(50%);
 }
-.products-item:hover: .products-item-photo-wrp:before {
+.products-item:hover .products-item-photo-wrp:before {
   content: "";
   display: block;
   width: 100%;
