@@ -1,3 +1,5 @@
+/*==== media-width: 1140px ====*/
+
 @media (max-width: 1140px){
   .nav_logo,
   footer p,
@@ -12,16 +14,34 @@
   .accesories_section{
     max-width: 750px;
   }
-
-}
-
-@media (max-width: 733px){
-  .accesories_section{
-    width: 484px;
+  .products-container .product-card.last{
+    display: none;
   }
+  .products-container{
+    max-width: 750px;
+  }
+  .filters{
+    max-width: 750px;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .filter-btn{
+    padding: 0;
+  }
+  .nav_bottom .nav_wrapper{
+    max-width: 737px;
+  }
+
+
 }
+
+/*==== media-width: 1140px ====*/
+
+/*==== media-width: 800px ====*/
 
 @media (max-width: 800px) {
+/* nav */
+
 
 /* banner */
 
@@ -61,7 +81,26 @@
   .products-container{
     gap: 16px;
   }
-
+  .product-info{
+    width: auto;
+    margin: 0;
+  }
+  .product-info .product-description{
+    max-width: 326px;
+  }
+  .product-info .product-price{
+    max-width: 175px;
+    padding-bottom: 32px;
+  }
+  .product-info .filters-row p{
+    font-size: 10px;
+  }
+  .product-banner img:nth-child(2){
+    height: 454px;
+  }
+  .recommended.products {
+    margin: 64px auto;
+  }
   /* advantages block */
 
   .advantages-container{
@@ -89,7 +128,29 @@
     padding: 0;
   }
 
+  .cart-wrapper{
+    justify-content: center;
+  }
+
 }
+
+/*==== media-width: 800px ====*/
+
+/*==== media-width: 733px ====*/
+
+@media (max-width: 733px){
+  .accesories_section{
+    width: 484px;
+  }
+  .filter-btn,
+  .filters-row{
+    padding: 0 16px;
+  }
+}
+
+/*==== media-width: 733px ====*/
+
+/*==== media-width: 575px ====*/
 
 @media (max-width: 575px) {
   .promo img{
@@ -101,9 +162,6 @@
   .menu a{
     display: inherit;
   }
-  .promo img{
-    display: none;
-  }
   .promo_text{
     padding-right: 0;
   }
@@ -111,9 +169,40 @@
     width: 12px;
     height: 61px;
   }
+
 }
 
+/*==== media-width: 575px ====*/
+
+/*==== media-width: 375px ====*/
+
 @media (max-width: 375px) {
+/* nav */
+
+  .nav_bottom .nav_wrapper{
+    flex-direction: column;
+    height: 78px;
+  }
+  .filters-row{
+    gap: 24px;
+  }
+  .filters-row p,
+  .filters-row label{
+    font-size: 12px;
+  }
+  .filter-btn{
+    display: none;
+  }
+  .filter-btn.mobile{
+    width: auto;
+  }
+  .filter-btn.mobile,
+  .filter-btn.mobile span{
+    display: flex;
+  }
+  .nav_bottom{
+    padding: 24px 0 46px;
+  }
 
 /* banner */
 
@@ -216,3 +305,5 @@
     margin: 40px 0;
   }
 }
+
+/*==== media-width: 375px ====*/

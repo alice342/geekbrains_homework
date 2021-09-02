@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_adaptive.css">
@@ -96,7 +97,10 @@
               </ul>
             </div>
             <a href="#"><img src="assets/img/personal.svg" alt=""></a>
-            <a href="#"><img src="assets/img/cart.svg" alt=""></a>
+            <a href="#">
+              <div class="cart_quantity">4</div>
+              <img src="assets/img/cart.svg" alt="">
+            </a>
           </div>
         </div>
       </nav>
@@ -111,16 +115,22 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main сlass="catalog-main">
       <div class="filters">
         <label class="filter-btn" for="filter-switch">
           FILTER<span></span>
+        </label>
+        <label class="filter-btn mobile" for="filter-switch">
+          <span></span>
         </label>
         <input id="filter-switch" type="checkbox" name="filter-btn" value="">
         <ul class="filter-list">
           <li>
             <label class="filter-btn" for="filter-switch">
             FILTER<span></span>
+            </label>
+            <label class="filter-btn mobile" for="filter-switch">
+              <span></span>
             </label>
         </li>
           <li>
@@ -184,7 +194,7 @@
         <article class="product-card">
           <a class="products-item">
             <div class="products-item-photo-wrp">
-              <img class="products-item-photo" src="assets/img/main_product_3.png" alt="product description">
+              <img class="products-item-photo" src="assets/img/main_product_1.png" alt="product description">
             </div>
             <div class="product-description">
               <h3>ellery x m'o capsule </h3>
@@ -333,7 +343,7 @@
           </a>
         </article>
 
-        <article class="product-card">
+        <article class="product-card last">
           <a class="products-item">
             <div class="products-item-photo-wrp">
               <img class="products-item-photo" src="assets/img/catalog_9.png" alt="product description">

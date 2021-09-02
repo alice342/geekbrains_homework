@@ -120,6 +120,17 @@ a{
   height: 2px;
   background-color: #000;
   position: relative;
+  border-radius: 1px;
+}
+
+.filter-btn.mobile{
+  display: none;
+}
+
+.filter-btn.mobile span{
+  width: 25px;
+  height: 4px;
+  display: none;
 }
 
 .filter-btn span::before,
@@ -134,9 +145,19 @@ a{
   left: 0;
 }
 
+.filter-btn.mobile span::before{
+  top: -10px;
+  height: 4px;
+}
+
 .filter-btn span::after{
   width: 60%;
   top: 4px;
+}
+
+.filter-btn.mobile span::after{
+  top: 10px;
+  height: 4px;
 }
 
 .menu-btn span {
@@ -183,7 +204,7 @@ input[type="checkbox"]{
 
 .filters{
   margin: 51px auto 64px;
-  width: 1140px;
+  max-width: 1140px;
   display: flex;
   flex-direction: row;
   gap: 304px;
@@ -386,6 +407,21 @@ display: block;
 }
 .menu-sublist-item:active a {
   text-decoration: none;
+}
+
+.cart_quantity{
+  background-color: #F16D7F;
+  height: 19px;
+  width: 19px;
+  border-radius: 9px;
+  text-align: center;
+  font-family: 'Lato';
+  font-size: 12px;
+  color: #FFFFFF;
+  margin-left: 20px;
+  margin-bottom: -13px;
+  z-index: 10;
+  position: relative;
 }
 
 /* header */
@@ -687,7 +723,7 @@ nav, .nav_top{
 .products-item:hover .products-item-photo {
   filter: brightness(50%);
 }
-.products-item:hover: .products-item-photo-wrp:before {
+.products-item:hover .products-item-photo-wrp:before {
   content: "";
   display: block;
   width: 100%;
@@ -1024,7 +1060,6 @@ footer p{
   background-color: white;
   height: 601px;
   max-width: 1141px;
-  min-width: 660px;
   width: 80%;
   border: 1px solid #EAEAEA;
   z-index: 5;
@@ -1063,7 +1098,7 @@ footer p{
   font-weight: 300;
   font-size: 14px;
   color: #5E5E5E;
-  width: 555px;
+  max-width: 551px;
   margin: 48px auto 0;
   padding: 0;
 }
@@ -1222,6 +1257,7 @@ footer p{
   padding-bottom: 21px;
   border-bottom: 1px solid #E2E2E2;
   text-align: right;
+  padding-top: 39px;
 }
 
 .cart_price-block button {
