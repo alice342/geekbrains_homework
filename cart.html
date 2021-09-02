@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Корзина</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_adaptive.css">
@@ -96,7 +97,10 @@
               </ul>
             </div>
             <a href="#"><img src="assets/img/personal.svg" alt=""></a>
-            <a href="#"><img src="assets/img/cart.svg" alt=""></a>
+            <a href="#">
+              <div class="cart_quantity">4</div>
+              <img src="assets/img/cart.svg" alt="">
+            </a>
           </div>
         </div>
       </nav>
@@ -138,12 +142,15 @@
             <a href="#">CONTINUE SHOPPING</a>
           </div>
         </section>
-        <form class="shipping-info" action="" method="post">
-          <p>SHIPPING ADRESS</p>
-          <input type="text" name="" value="" placeholder="Bangladesh">
-          <input type="text" name="" value="" placeholder="State">
-          <input type="text" name="" value="" placeholder="Postcode / Zip">
-          <input type="submit" name="" value="GET A QUOTE">
+        <div class="">
+          <form class="shipping-info" action="" method="post">
+            <p>SHIPPING ADRESS</p>
+            <input type="text" name="" value="" placeholder="Bangladesh">
+            <input type="text" name="" value="" placeholder="State">
+            <input type="text" name="" value="" placeholder="Postcode / Zip">
+            <input type="submit" name="" value="GET A QUOTE">
+
+          </form>
           <div class="cart_price-block">
             <div class="prices-wrapper">
               <p class="cart_price-sub-total">sub total <span>$900</span></p>
@@ -151,7 +158,8 @@
             </div>
             <button type="button" name="button">PROCEED TO CHECKOUT</button>
           </div>
-        </form>
+        </div>
+
       </div>
     </main>
     <section class="subscribe-block">
