@@ -81,7 +81,26 @@
   .products-container{
     gap: 16px;
   }
-
+  .product-info{
+    width: auto;
+    margin: 0;
+  }
+  .product-info .product-description{
+    max-width: 326px;
+  }
+  .product-info .product-price{
+    max-width: 175px;
+    padding-bottom: 32px;
+  }
+  .product-info .filters-row p{
+    font-size: 10px;
+  }
+  .product-banner img:nth-child(2){
+    height: 454px;
+  }
+  .recommended.products {
+    margin: 64px auto;
+  }
   /* advantages block */
 
   .advantages-container{
@@ -146,6 +165,7 @@
     width: 12px;
     height: 61px;
   }
+
 }
 
 /*==== media-width: 575px ====*/
@@ -160,11 +180,17 @@
     height: 78px;
   }
   .filters-row{
-    font-size: 12px;
     gap: 24px;
+  }
+  .filters-row p,
+  .filters-row label{
+    font-size: 12px;
   }
   .filter-btn{
     display: none;
+  }
+  .filter-btn.mobile{
+    width: auto;
   }
   .filter-btn.mobile,
   .filter-btn.mobile span{

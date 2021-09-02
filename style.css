@@ -122,6 +122,11 @@ a{
   position: relative;
   border-radius: 1px;
 }
+
+.filter-btn.mobile{
+  display: none;
+}
+
 .filter-btn.mobile span{
   width: 25px;
   height: 4px;
@@ -1055,7 +1060,6 @@ footer p{
   background-color: white;
   height: 601px;
   max-width: 1141px;
-  min-width: 660px;
   width: 80%;
   border: 1px solid #EAEAEA;
   z-index: 5;
@@ -1094,7 +1098,7 @@ footer p{
   font-weight: 300;
   font-size: 14px;
   color: #5E5E5E;
-  width: 555px;
+  max-width: 551px;
   margin: 48px auto 0;
   padding: 0;
 }
