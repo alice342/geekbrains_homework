@@ -1,3 +1,5 @@
+/*==== media-width: 1140px ====*/
+
 @media (max-width: 1140px){
   .nav_logo,
   footer p,
@@ -33,15 +35,9 @@
 
 }
 
-@media (max-width: 733px){
-  .accesories_section{
-    width: 484px;
-  }
-  .filter-btn,
-  .filters-row{
-    padding: 0 16px;
-  }
-}
+/*==== media-width: 1140px ====*/
+
+/*==== media-width: 800px ====*/
 
 @media (max-width: 800px) {
 /* nav */
@@ -115,6 +111,24 @@
 
 }
 
+/*==== media-width: 800px ====*/
+
+/*==== media-width: 733px ====*/
+
+@media (max-width: 733px){
+  .accesories_section{
+    width: 484px;
+  }
+  .filter-btn,
+  .filters-row{
+    padding: 0 16px;
+  }
+}
+
+/*==== media-width: 733px ====*/
+
+/*==== media-width: 575px ====*/
+
 @media (max-width: 575px) {
   .promo img{
     display: none;
@@ -133,6 +147,10 @@
     height: 61px;
   }
 }
+
+/*==== media-width: 575px ====*/
+
+/*==== media-width: 375px ====*/
 
 @media (max-width: 375px) {
 /* nav */
@@ -257,3 +275,5 @@
     margin: 40px 0;
   }
 }
+
+/*==== media-width: 375px ====*/
