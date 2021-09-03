@@ -1437,3 +1437,388 @@ footer p{
 .perks-block ul {
   gap: 16px;
 }
+
+/*==== media-width: 1140px ====*/
+
+@media (max-width: 1140px){
+  .nav_logo,
+  footer p,
+  .subscribe-info{
+    padding-left: 32px;
+  }
+  .social-media,
+  .nav_menu,
+  .subscribe{
+    padding-right: 32px;
+  }
+  .accesories_section{
+    max-width: 750px;
+  }
+  .products-container .product-card.last{
+    display: none;
+  }
+  .products-container{
+    max-width: 750px;
+  }
+  .filters{
+    max-width: 750px;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .filter-btn{
+    padding: 0;
+  }
+  .nav_bottom .nav_wrapper{
+    max-width: 737px;
+  }
+
+
+}
+
+/*==== media-width: 1140px ====*/
+
+/*==== media-width: 1010px ====*/
+
+@media (max-width: 1063px) {
+    .cart-wrapper{
+      justify-content: center;
+    }
+    .shipping-info-wrapper{
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 64px;
+    }
+    .cart_price-block{
+      width: 360px;
+    }
+    .cart_product-card {
+      width: 734px;
+      margin-right: 0;
+    }
+    .cart_shopping_buttons{
+      justify-content: center;
+      gap: 48px;
+    }
+
+}
+
+/*==== media-width: 1010px ====*/
+
+/*==== media-width: 800px ====*/
+
+@media (max-width: 800px) {
+/* nav */
+
+
+/* banner */
+
+  .promo{
+    height: 368px;
+  }
+  .promo img{
+    height: 368px;
+    margin-left: 106px;
+  }
+  .promo_text_top {
+    font-size: 44px;
+  }
+  .promo_text_bottom {
+    font-size: 24px;
+  }
+
+  /* shop section */
+
+  .women_section,
+  .men_section,
+  .kids_section{
+    height: 167px;
+    width: 232px;
+  }
+  .shop-sections{
+    gap: 19px;
+    margin-bottom: 154px;
+  }
+  .accesories_section{
+    height: 116px;
+    max-width: 737px;
+  }
+
+  /* products */
+
+  .products-container{
+    gap: 16px;
+  }
+  .product-info{
+    width: auto;
+    margin: 0;
+  }
+  .product-info .product-description{
+    max-width: 326px;
+  }
+  .product-info .product-price{
+    max-width: 175px;
+    padding-bottom: 32px;
+  }
+  .product-info .filters-row p{
+    font-size: 10px;
+  }
+  .product-banner img:nth-child(2){
+    height: 454px;
+  }
+  .recommended.products {
+    margin: 64px auto;
+  }
+  /* advantages block */
+
+  .advantages-container{
+    flex-direction: column;
+    gap: 48px;
+  }
+  .advantages{
+    padding: 48px 0;
+  }
+
+  /* subscribe block */
+
+  .subscribe-wrapper{
+    flex-direction: column;
+    height: 614px;
+  }
+  .subscribe-info{
+    margin-top: 64px;
+  }
+  .subscribe{
+    margin-bottom: 140px;
+  }
+  .subscribe-info,
+  .subscribe{
+    padding: 0;
+  }
+
+}
+
+/*==== media-width: 800px ====*/
+
+/*==== media-width: 733px ====*/
+
+@media (max-width: 733px){
+  .accesories_section{
+    width: 484px;
+  }
+  .filter-btn,
+  .filters-row{
+    padding: 0 16px;
+  }
+}
+
+/*==== media-width: 733px ====*/
+
+/*==== media-width: 575px ====*/
+
+@media (max-width: 575px) {
+  .promo img{
+    display: none;
+  }
+  .promo{
+    display: flex;
+  }
+  .menu a{
+    display: inherit;
+  }
+  .promo_text{
+    padding-right: 0;
+  }
+  .promo_text::before{
+    width: 12px;
+    height: 61px;
+  }
+
+}
+
+/*==== media-width: 575px ====*/
+
+/*==== media-width: 375px ====*/
+
+@media (max-width: 375px) {
+/* nav */
+
+  .nav_bottom .nav_wrapper{
+    flex-direction: column;
+    height: 78px;
+  }
+  .filters-row{
+    gap: 24px;
+  }
+  .filters-row p,
+  .filters-row label{
+    font-size: 12px;
+  }
+  .filter-btn{
+    display: none;
+  }
+  .filter-btn.mobile{
+    width: auto;
+  }
+  .filter-btn.mobile,
+  .filter-btn.mobile span{
+    display: flex;
+  }
+  .nav_bottom{
+    padding: 24px 0 46px;
+  }
+
+/* banner */
+
+  .promo{
+    height: 368px;
+    display: flex;
+  }
+  .nav_menu a{
+    display: none;
+  }
+  .menu a{
+    display: inherit;
+  }
+  .promo img{
+    display: none;
+  }
+  .promo_text{
+    padding-right: 0;
+  }
+  .promo_text::before{
+    width: 12px;
+    height: 61px;
+  }
+  .promo_text_top {
+    font-size: 38px;
+  }
+  .promo_text_bottom {
+    font-size: 20px;
+  }
+
+  /* shop section */
+
+  .women_section,
+  .men_section,
+  .kids_section{
+    height: 247px;
+    width: 343px;
+  }
+  .shop-sections{
+    gap: 19px;
+    margin-bottom: 154px;
+  }
+  .accesories_section{
+    height: 111px;
+    width: 343px;
+  }
+
+  /* products */
+
+  .products-container{
+    gap: 16px;
+  }
+
+  /* advantages block */
+
+  .advantages-container{
+    flex-direction: column;
+    gap: 48px;
+  }
+  .advantages{
+    padding: 48px 0;
+  }
+
+  /* subscribe block */
+
+  .subscribe-wrapper{
+    flex-direction: column;
+    height: 614px;
+  }
+  .subscribe-info{
+    margin-top: 64px;
+  }
+  .subscribe-info p{
+    font-size: 18px;
+  }
+  .subscribe{
+    margin-bottom: 140px;
+  }
+  .subscribe p span{
+    font-size: 14px;
+  }
+  .subscribe-submit {
+    width: 341px;
+  }
+
+  /* footer */
+  footer{
+
+  }
+  .footer_wraper{
+    flex-direction: column-reverse;
+    height: 143px;
+  }
+  footer p,
+  .social-media{
+    padding: 0;
+    margin-bottom: 9px;
+  }
+  .social-media{
+    margin: 40px 0;
+  }
+
+  /* cart */
+  .cart_product-card{
+    width: 358px;
+    height: 188px;
+  }
+  .cart_product-card img{
+    height: 188px;
+  }
+  .cart_product-description {
+    margin-top: 14px;
+  }
+  .cart_product-description p:first-child {
+    font-size: 16px;
+    margin-bottom: 26px;
+  }
+  .cart_product-description p {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  .cart_product-description input {
+    margin-left: 24px;
+    padding-left: 9px;
+    width: 16px;
+    font-size: 10px;
+  }
+  .cart_shopping_buttons a{
+    padding: 9px 0;
+    font-size: 12px;
+    font-weight: normal;
+    width: 175px;
+    text-transform: unset;
+  }
+  .shipping-info-wrapper{
+    margin-top: 38px;
+  }
+  .cart_shopping_buttons{
+    gap: 9px;
+    margin-top: 30px;
+  }
+  .delete-button{
+    width: 11px;
+    height: 11px;
+    background-size: contain;
+    margin: 17px 11px;
+    display: block;
+  }
+  .shipping-info-wrapper{
+    flex-direction: column;
+  }
+}
+
+/*==== media-width: 375px ====*/
