@@ -1158,7 +1158,6 @@ footer p{
   display: flex;
   flex-direction: column;
   gap: 40px;
-  max-width: 652px;
 }
 
 .delete-button{
@@ -1183,7 +1182,6 @@ footer p{
 }
 
 .cart_product-card img{
-  width: 262px;
   height: 306px;
 }
 
@@ -1226,6 +1224,8 @@ footer p{
   background-color: #F5F3F3;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 39px;
+  height: min-content;
 }
 
 .cart_price-sub-total{
@@ -1251,12 +1251,13 @@ footer p{
 
 .prices-wrapper{
   flex-direction: column;
-  margin: 39px 44px 17px;
+  margin: 0 44px 17px;
   display: flex;
   gap: 12px;
   padding-bottom: 21px;
   border-bottom: 1px solid #E2E2E2;
   text-align: right;
+  padding-top: 39px;
 }
 
 .cart_price-block button {
@@ -1332,6 +1333,7 @@ footer p{
   font-size: 14px;
   width: 225px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .cart_shopping_buttons a:hover{
